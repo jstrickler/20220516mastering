@@ -14,8 +14,12 @@ pattern = r'([A-Z])-(\d{2,3})'  # <1>
 
 for m in re.finditer(pattern, s):
     print(m.group(0), m.group(1), m.group(2))  # <2>
-    print(m.start(1), m.end(1), m.span())
+    print(m.start(1), m.end(1), m.span(1))
+    print("=")
 print()
 
 matches = re.findall(pattern, s)  # <3>
 print("matches:", matches)
+
+for letter, number in matches:
+    print(letter, number)

@@ -1,0 +1,79 @@
+
+pat    "pattern"   "I had a spat with my spouse"
+              "compatible software"  "You can pat the dog"
+
+p.t    'p' + 'any 1 char' + 't'
+
+p[aeiou]t   pat pet pot pit put
+
+p[abcdefghijklmnopqrstuvwxyz]t
+
+p[a-z]t
+
+p[a-zA-Z]t
+
+[0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9]
+
+\d  [0-9]  \s [ \t\n\r\f]   \w [a-zA-Z0-9_]
+
+\d\d\d-\d\d-\d\d\d\d
+
+foo\.bar
+
+# repeat counts
+#  * 0 or more
+#  + 1 or more
+#  ? 0 or 1
+# {n}  exactly n
+# {n,} n or more
+# {n1,n2}  from n1 to n2, inclusive
+
+\d{3}-\d{2}-\d{4}
+
+# anchors
+#  ^ beginning of string
+#  $ end of string
+#  \b beginning or end of word
+
+^\d+$
+
+\d+
+
+^\s*\d+\s*$
+
+^foo
+
+bar$
+
+\bspam
+
+ham\b
+
+\bthe\b
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

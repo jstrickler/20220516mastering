@@ -30,6 +30,7 @@ d3 = d2 - d1  # <5>
 
 print("raw time delta:", d3)
 print("time delta days:", d3.days)  # <6>
+print("time delta seconds:", d3.seconds)  # <6>
 
 interval = timedelta(10)  # <7>
 print("interval:", interval)

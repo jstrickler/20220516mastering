@@ -26,6 +26,7 @@ for date_string in date_strings:
     print(f"{date_string:25s}", end=' ')
     try:
         dt = parser.parse(date_string)  # <2>
-        print(dt)
     except ValueError as err:
         print(err)
+    else:
+        print(dt)

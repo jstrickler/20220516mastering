@@ -10,7 +10,7 @@ voluptate velit esse cillum dolore U901 eu fugiat nulla pariatur.
 Excepteur sint occaecat A-110 cupidatat non proident, sunt in H-332 culpa qui 
 officia deserunt Y-45 mollit anim id est laborum"""
 
-pattern = r'[A-Z]-\d{2,3}'
+pattern = r'[A-Z]-\d{2,3}'  # \s
 
 if re.search(pattern, s, re.IGNORECASE):  # <1>
     print("Found pattern.")
