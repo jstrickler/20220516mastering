@@ -42,6 +42,7 @@ def add_text_attachment(file_name, message):
     with open(file_name) as file_in:  # <7>
         attachment_data = file_in.read()
     message.add_attachment(attachment_data)  # <8>
+    message.add_attachment("So long and thanks for all the fish!")
 
 
 def add_image_attachment(file_name, message):

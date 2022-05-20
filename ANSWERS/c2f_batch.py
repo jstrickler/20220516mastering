@@ -2,6 +2,9 @@
 
 import sys
 
+print("sys.argv: {}".format(sys.argv))
+
+
 celsius = float(sys.argv[1])
 
 fahrenheit = ((9 * celsius) / 5) + 32

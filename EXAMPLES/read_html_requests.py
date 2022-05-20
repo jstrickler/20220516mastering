@@ -10,3 +10,5 @@ print()
 print(response.text[:200])   # <3>
 print('...')
 print(response.text[-200:])   # <4>
+print()
+print(response.text)

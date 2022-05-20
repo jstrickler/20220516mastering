@@ -2,7 +2,7 @@
 
 from glob import glob
 
-files = glob('../DATA/*.txt') # <1>
+files = glob('../DATA/pres*') # <1>
 print(files, '\n')
 
 no_files = glob('../JUNK/*.avi')
